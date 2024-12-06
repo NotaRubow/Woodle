@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class woodle {
     public static void main(String[] args) {
-        String word = "FROST";
+        String wword = "snack";
+        String word =wword.toUpperCase();
         Scanner input = new Scanner(System.in);
         int attempts = 0;
         boolean isCorrect = false;
@@ -50,7 +51,7 @@ public class woodle {
             
             
         System.out.println(correctLocation + " in the correct location");
-        System.out.println(correctLetter + " correct letter (wrong location)");
+        System.out.println(correctLetter + " correct letter(s) (wrong location)");
         attempts++;
 
         if  (correctLocation == 5){
